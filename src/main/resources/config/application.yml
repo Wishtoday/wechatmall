@@ -1,0 +1,32 @@
+#==========================================================
+# Spring Properties
+#==========================================================
+spring:
+  application:
+    name: mall
+  profiles:
+    active: dev
+server:
+  port: 8081
+#==========================================================
+# Mybatis Properties
+#==========================================================
+mybatis:
+  #config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+#==========================================================
+# 应用启动条件评估报告打印配置
+#==========================================================
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: ERROR     # 日志不打印条件评估报告
+#==========================================================
+# 日志打印级别及路径配置
+#==========================================================
+logback:
+  level: INFO      #日志级别 DEBUG  INFO  ERROR
+  file:
+    path: /home/mall/logs         #日志路径

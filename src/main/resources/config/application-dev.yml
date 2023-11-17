@@ -1,0 +1,22 @@
+#==========================================================
+# Spring Properties
+#==========================================================
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+#==========================================================
+# Swagger Properties
+#==========================================================
+swagger:
+  enable: true
+  basePackage: com.example.springboot.controller
+  title: zxy_swagger
+  contact:
+    name: zhuxiying
+    url: http://localhost:8081/doc.html
+    email: xiying.zhu@outlook.com
+  description: swagger文档
+  version: V1.0
